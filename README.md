@@ -50,9 +50,9 @@ os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 ### 目标检测
 
-python detect.py --source test.mp4 --weights best.pt
+python detect.py --source ../datasets/people/images/test/test.mp4 --weights best.pt
 
-test.mp4,best.pt 在当前目录/yolov5下
+best.pt 在当前目录/yolov5下
 
 detect结果保存在/yolov5/runs/detect/exp下，同train
 
