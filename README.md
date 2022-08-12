@@ -22,11 +22,8 @@ pip install wandb
 
 使用 /yolov5/models 中的配置文件训练
 
-python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 128
-                                       			       yolov5s                                		     64
-                                       			       yolov5m                                		     40
-                                       			       yolov5l                                		     24
-                                       			       yolov5x                                		     16
+python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
+
 使用coco128训练模型：
 
 python train.py --img 640 --batchsize 16 --epochs 3 --data coco128.yaml --weights yolov5s.pt
@@ -36,7 +33,6 @@ python train.py --img 640 --batchsize 16 --epochs 3 --data coco128.yaml --weight
 python train.py --img 640 --batchsize 16 --epochs 100 --data people.yaml --weights yolov5s.pt
 
 训练结果在 /yolov5/runs/train/exp 中，每次训练会生成新的exp文件夹，不会覆盖。
-
 
 如果页面文件空间不足可以系统设置页面文件大小。参考[“OSError: [WinError 1455]页面文件太小，无法完成操作。”解决方案](https://blog.csdn.net/weixin_46133643/article/details/125042903)
 
