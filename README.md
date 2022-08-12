@@ -1,5 +1,6 @@
 ## [HIT] 基于yolov5s的行人检测 --徐涛
 
+[yolov5仓库地址](https://github.com/ultralytics/yolov5)
 ### 环境配置：
 
 anaconda create --name yolo python=3.7
